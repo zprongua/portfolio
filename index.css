@@ -1,0 +1,59 @@
+html {
+    font-family:Calibri, sans-serif;
+    background: #006bb6;
+}
+
+:focus-visible {
+    outline: 2px solid forestgreen;
+}
+
+header {
+    color: #b8ddb5;
+    display: inline-flex;
+    position: relative;
+    top: 35px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.header-name {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.header-title {
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.profile-pic {
+    border-color: aqua;
+    border-radius: 50%;
+}
+
+nav {
+    text-align: right;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    background: #006bb6;
+    color: #fff;
+    font-size: 15px;
+
+    text-transform: uppercase;
+    padding: 5px; 
+    border-radius: 10px;
+    border: transparent;
+}
+
+button:hover {
+    background-color: #77aadd;
+}
