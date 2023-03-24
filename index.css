@@ -1,6 +1,9 @@
+/* General Formatting */
 html {
     font-family:Calibri, sans-serif;
-    background: #006bb6;
+    background: #3b67a3;
+    /* color: #c4cad1; #006bb6*/
+    color: #fff;
 }
 
 :focus-visible {
@@ -11,49 +14,107 @@ header {
     color: #b8ddb5;
     display: inline-flex;
     position: relative;
-    top: 35px;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    text-align: center-left;
+    padding-left: 10%;
 }
 
 .header-name {
-    font-size: 45px;
-    font-weight: bold;
-    padding: 0px 10px;
+    font-size: 65px;
+    font-weight: 500;
+    padding-left: 15px;
 }
 
 .header-title {
     font-size: 20px;
-    padding: 0px 10px;
+    font-weight: 100;
+    padding-left: 30px;
 }
 
-.profile-pic {
-    border-color: aqua;
+img {
     border-radius: 50%;
 }
 
 nav {
     text-align: right;
+    position: relative;
+    padding-right: 10%;
 }
 
 a {
-    color: black;
+    color: #fff;
     text-decoration: none;
+    border-radius: 10px;
+    padding: 1px;
 }
 
-button {
-    outline: none;
-    background: #006bb6;
-    color: #fff;
-    font-size: 15px;
+a:hover {
+    color:#b8ddb5;
+}
 
+.btn {
+    display: inline-flex;
+    outline: none;
+    background: #3b67a3;
+    font-size: 15px;
     text-transform: uppercase;
     padding: 5px; 
     border-radius: 10px;
     border: transparent;
 }
 
-button:hover {
-    background-color: #77aadd;
+footer {
+    text-align: right;
+}
+
+/* Resume Page */
+#summary {
+    text-indent: 20px;
+    padding: 30px 7%;
+    font-size: 20px;
+}
+#skills {
+    text-align: center;
+    padding: 10px;
+}
+
+#work {
+    width: 70%;
+}
+
+#work-title {
+    color: orange;
+    font-size: 30px;
+    padding: 0;
+    margin-right:auto;
+}
+
+#work-dates {
+    color: #b8ddb5;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#work dl {
+    margin-left: 30px;
+}
+#work dt {
+    padding: 10px;
+}
+#work dd {
+    padding: 2px;
+}
+
+/* Contact Page */
+#contact-info {
+    text-align: center;
+    font-size: 20px;
+}
+#contact-info h2{
+    color: orange;
+}
+#map {
+    text-align: center;
+}
+iframe {
+    border-radius: 10px;
 }

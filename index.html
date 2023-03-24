@@ -5,52 +5,43 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
         <title>Zachary Prongua</title>
     </head>
     <body>
         <!--Header to display who I am and what I do-->
         <header>
-            <h1>Zachary Prongua</h1>
-            <h4>Full Stack Developer</h4>
+            <img src="images/zacharyprongua.png" alt="Profile Picture" height="125px" width="125px">
+            <div>
+                <div class="header-name">Zachary Prongua</div>
+                <div class="header-title">Software Engineer</div>
+            </div>
         </header>
         <!--Navigation bar for website, resume is a seperate page, others are links to content on the homepage-->
         <nav>
-            <button>Home</button>
-            <button>Projects</button>
-            <button>Contact Me</button>
-            <button>Resume</button>
+            <div class="btn"><a href="index.html">Home</a></div>
+            <div class="btn"><a href="">Projects</a></div>
+            <div class="btn"><a href="contact.html">Contact</a></div>
+            <div class="btn"><a href="resume.html">Resume</a></div>
         </nav>
+        <hr width="80%">
         <!--Page content goes here-->
         <main>
             <!--Dispaly past projects-->
             <div class="projects">
                 <h3>Projects</h3>
                 <div>
-                    <div><a href="https://www.github.com/zprongua/tazedaily">TAZE Daily</a></div>
-                    <div><a href="https://www.github.com/zprongua/ihaterunning">I Hate Running</a></div>
-                    <div><a href="https://www.github.com/zprongua/cookebook">Cook-e-Book</a></div>
+                    <div><a href="https://www.github.com/zprongua/tazedaily" target="_blank">TAZE Daily</a></div>
+                    <div><a href="https://www.github.com/zprongua/ihaterunning" target="_blank">I Hate Running</a></div>
+                    <div><a href="https://www.github.com/zprongua/cookebook" target="_blank">Cook-e-Book</a></div>
                 </div>
             </div>
-            <!--Form to contact me-->
-            <div class="contact">
-                <h3>Contact Me</h3>
-                <form>
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email"><br>
-                    <label for="message">Message</label><br>
-                    <input type="text" id="message" name="message"><br><br>
-                    <input type="submit" value="Contact Me"><br>
-                </form>
-            </div>
         </main>
-        <!--Footer with me, the authour, and a link to my Github-->
+        <!--Footer with me, the authour, a link to my Github/LinkedIn, and an email link-->
         <footer>
-            <div>
-                <br>
-                <a href="https://www.github.com/zprongua">&#169; 2023 - Zachary Prongua</a>
-            </div>
+            Zachary Prongua &#169;2023
+            <br>
+            <a href="mailto:zprongua001@my.wilmu.edu" style="text-align: right;" subject="Portfolio Response">zprongua001@my.wilmu.edu</a>
         </footer>
     </body>
 </html>
