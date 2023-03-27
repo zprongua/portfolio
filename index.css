@@ -6,6 +6,11 @@ html {
     color: #fff;
 }
 
+img.profile {
+    height: 75px;
+    width: 75px;
+}
+
 :focus-visible {
     outline: 2px solid forestgreen;
 }
