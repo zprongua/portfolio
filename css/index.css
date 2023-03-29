@@ -16,8 +16,6 @@ html {
 
 /* profile pic */
 #profile {
-    height: 125px;
-    width: 125px;
     max-width: 100%;
     border-radius: 50%;
     display: block;
@@ -33,6 +31,7 @@ header {
     color: #b8ddb5;
     float: left;
     width: 60%;
+    height: 8em;
     display: inline-flex;
     padding-top: 2em;
     padding-left: 2em;
@@ -120,9 +119,7 @@ footer {
     padding-right: 20px;
 }
 
-#work {
-    width: 70%;
-}
+#work {}
 
 .work-title {
     color: orange;
@@ -166,4 +163,12 @@ footer {
 
 iframe {
     border-radius: 10px;
+}
+
+.work-card {
+    background-color: black;
+    border: red;
+    border-width: 5px;
+    border-radius: 5px;
+    margin: 1em;
 }
