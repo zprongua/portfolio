@@ -1,5 +1,11 @@
 /* Zachary Prongua - 03/27/2023 - index.css */
 /* Hard reset of all styling */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +15,14 @@
 html {
     font-family: Calibri, Arial, sans-serif;
     background: #4e89db;
+    color-scheme: dark light;
     /* color: #c4cad1; #006bb6*/
     color: #fff;
     margin: 0 10%;
+}
+
+body {
+    min-height: 100vh;
 }
 
 /* profile pic */
