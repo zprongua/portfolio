@@ -64,21 +64,22 @@ header {
 
 /* navigation bar formatting */
 nav {
-    float: right;
+    /* float: right;
     margin: 3em 3em 0 0;
     width: 24em;
     position: absolute;
-    right: 0;
+    right: 0; */
 }
 
 #navbar {
-    /* text-align: right;
+    text-align: right;
     padding-right: 10%;
     list-style-type: none;
-    display: block; */
+    display: block;
     display: flex;
+    position: relative;
     margin: 0;
-    padding: 1em;
+    padding: 0;
     list-style: none;
 }
 
@@ -102,7 +103,7 @@ a {
     color: #fff;
     text-decoration: none;
     border-radius: 10px;
-    padding: 1px;
+    padding: 10px;
 }
 
 a:hover {
