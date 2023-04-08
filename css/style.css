@@ -50,6 +50,14 @@ header {
     flex: 1;
 }
 
+.header-photo {
+    width: auto;
+}
+
+.header {
+    width: auto;
+}
+
 header img {
     max-height: 125px;
     max-width: 100%;
