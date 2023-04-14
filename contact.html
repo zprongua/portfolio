@@ -9,23 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Zachary Prongua - Contact Me</title>
+    <script src="nav.js" defer></script>
 </head>
 
 <body>
     <!--Header to display who I am and what I do-->
     <header>
-        <div class="header-image">
-            <img src="images/zacharyprongua.png" alt="Profile Picture" id="profile">
+        <img src="images/zacharyprongua.png" alt="Profile Picture" id="profile">
+        <div>
+            <p class="header-name">Zachary Prongua</p>
+            <p class="header-title">Software Engineer</p>
         </div>
-        <div class="header-name">Zachary Prongua</div>
-        <div class="header-title">Software Engineer</div>
     </header>
-    <br>
+
     <!--Navigation bar for website, resume is a seperate page, others are links to content on the homepage-->
-    <button><span class="sr-only">Menu</span></button>
     <nav>
-        <ul id="navbar">
-            <li classs="active">
+        <ul class="navbar" data-visible="false">
+            <li>
                 <a href="index.html">Home</a>
             </li>
             <li>
@@ -38,7 +38,10 @@
                 <a href="resume.html">Resume</a>
             </li>
         </ul>
+        <button class="navbutton" aria-controls="navbar" aria-expanded="false"></button>
     </nav>
+    <br>
+    <br>
     <hr class="nav-line">
     <!--Page content goes here.-->
     <main>
@@ -67,8 +70,9 @@
             </div>
             <hr width="30%">
             <!--Embedded map of my current school-->
-            <h2 style="text-align: center;">Current School - Wilmington University</h2>
+            <h2>Wilmington University</h2>
             <div id="map">
+                <br>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.052584103315!2d-75.54878048457434!3d39.82823869914282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6fb5902ef9dbb%3A0x60e5e35ddac39299!2sWilmington%20University%20Brandywine%20Campus!5e0!3m2!1sen!2sus!4v1679681469213!5m2!1sen!2sus"
                     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
