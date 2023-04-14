@@ -70,6 +70,8 @@ header img {
 /* navigation bar formatting */
 nav {
     clear: both;
+    position: sticky;
+    top: 0;
 }
 
 .navbar {
@@ -82,13 +84,13 @@ nav {
     padding: 0 3em;
     margin: 0;
     position: sticky;
-    top: 0;
     align-items: left;
 }
 
 /* main formatting */
 hr {
     width: 80%;
+    margin: auto;
 }
 
 a {
