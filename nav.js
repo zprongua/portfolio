@@ -6,8 +6,10 @@ navButton.addEventListener('click', () => {
     console.log(visibility)
     if (visibility === "false") {
         navBar.setAttribute('data-visible', true)
+        navButton.setAttribute('aria-expanded', true)
     }
     else {
         navBar.setAttribute('data-visible', false)
+        navButton.setAttribute('aria-expanded', false)
     }
 })

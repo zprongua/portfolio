@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Zachary Prongua - Resume</title>
+    <script src="nav.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <br>
     <!--Navigation bar for website, resume is a seperate page, others are links to content on the homepage-->
     <nav>
-        <ul id="navbar">
+        <ul class="navbar" data-visible="false">
             <li>
                 <a href="index.html">Home</a>
             </li>
@@ -37,8 +38,16 @@
                 <a href="resume.html">Resume</a>
             </li>
         </ul>
+        <div class="navbar-button">
+            <button class="navbutton" aria-controls="navbar" aria-expanded="false">
+                <svg fill="white" class="navlogo" viewbox="0 0 100 100" width="25">
+                    <rect class="line top-line" width="80" height="10" x="10" y="35" rx="5"></rect>
+                    <rect class="line bottom-line" width="80" height="10" x="10" y="55" rx="5"></rect>
+                </svg>
+            </button>
+        </div>
     </nav>
-    <hr width="80%">
+    <br>
     <!--Page content goes here.-->
     <main>
         <!--Summaryof my work history-->
@@ -166,7 +175,7 @@
     </main>
     <!--Footer with me, the authour, a link to my Github/LinkedIn, and an email link-->
     <footer>
-        Zachary Prongua &#169;2023
+        Zachary Prongua &#169;2023 &nbsp;
         <br>
         <a href="mailto:zprongua001@my.wilmu.edu" subject="Portfolio Response">zprongua001@my.wilmu.edu</a>
     </footer>

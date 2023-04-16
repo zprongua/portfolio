@@ -8,6 +8,13 @@
     padding: 0;
 }
 
+/* Google Font for Name */
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/novaoval-regular-webfont.woff2') format('woff2'),
+        url('../fonts/novaoval-regular-webfont.woff') format('woff')
+}
+
 /* General Formatting */
 html {
     font-family: Calibri, Arial, sans-serif;
@@ -17,10 +24,6 @@ html {
     color: #fff;
 }
 
-body {
-    min-height: 100dvh;
-    justify-items: center;
-}
 
 /* profile pic */
 #profile {
@@ -57,7 +60,7 @@ header img {
     font-size: 4em;
     font-weight: 500;
     padding-left: 0.2em;
-
+    font-family: 'MyWebFont', Calibri, Arial, sans-serif;
 }
 
 .header-title {
@@ -107,6 +110,11 @@ a:hover {
 /* footer formatting */
 footer {
     text-align: right;
+}
+
+/* Index Page */
+.projects {
+    text-align: center;
 }
 
 /* Resume Page */
@@ -185,9 +193,16 @@ iframe {
     display: none;
 }
 
+/* smaller desktops
+    keeps name on one line
+    changes color of text on hover */
 @media (max-width: 700px) {
     .header-name {
         font-size: 3em;
+    }
+
+    .header-name:hover {
+        color: orangered;
     }
 
     #contact-info h1,
@@ -196,6 +211,7 @@ iframe {
     }
 }
 
+/* Mobile */
 @media (max-width: 35em) {
     .navbar {
         position: fixed;
@@ -219,14 +235,26 @@ iframe {
 
     .navbutton {
         display: block;
-        position: absolute;
         z-index: 999;
-        background: #333;
-        width: 2rem;
-        border: 0;
-        aspect-ratio: 1;
-        top: 2rem;
+        background: transparent;
+        border: none;
+        position: fixed;
+        top: 1rem;
         right: 2rem;
+    }
+
+    .navbutton[aria-expanded="true"] :is(.top-line, .bottom-line) {
+        y: 45;
+        transform-origin: center;
+        transition: 500ms;
+    }
+
+    .navbutton[aria-expanded="true"] :is(.top-line) {
+        rotate: 45deg;
+    }
+
+    .navbutton[aria-expanded="true"] :is(.bottom-line) {
+        rotate: -45deg;
     }
 
     iframe {
