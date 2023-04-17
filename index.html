@@ -12,69 +12,50 @@
     <script src="nav.js" defer></script>
 </head>
 
+<!--Header to display who I am and what I do-->
+<header>
+    <div class="header-photo">
+        <figure>
+            <img src="images/zacharyprongua.png" alt="Profile Picture" id="profile">
+            <figcaption class="header-title">Software Engineer</figcaption>
+        </figure>
+    </div>
+    <div class="header">
+        <div class="header-name">Zachary Prongua</div>
+    </div>
+</header>
+<br>
+<!--Navigation bar for website, resume is a seperate page, others are links to content on the homepage-->
+<nav>
+    <ul class="navbar" data-visible="false">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="projects.html">Projects</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+        <li>
+            <a href="resume.html">Resume</a>
+        </li>
+    </ul>
+    <div class="navbar-button">
+        <button class="navbutton" aria-controls="navbar" aria-expanded="false">
+            <svg fill="white" class="navlogo" viewbox="0 0 100 100" width="25">
+                <rect class="line top-line" width="80" height="10" x="10" y="35" rx="5"></rect>
+                <rect class="line bottom-line" width="80" height="10" x="10" y="55" rx="5"></rect>
+            </svg>
+        </button>
+    </div>
+</nav>
+<br>
+
 <body>
-    <!--Header to display who I am and what I do-->
-    <header>
-        <div class="header-photo">
-            <figure>
-                <img src="images/zacharyprongua.png" alt="Profile Picture" id="profile">
-                <figcaption class="header-title">Software Engineer</figcaption>
-            </figure>
-        </div>
-        <div class="header">
-            <div class="header-name">Zachary Prongua</div>
-        </div>
-    </header>
-    <br>
-    <!--Navigation bar for website, resume is a seperate page, others are links to content on the homepage-->
-    <nav>
-        <ul class="navbar" data-visible="false">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="">Projects</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="resume.html">Resume</a>
-            </li>
-        </ul>
-        <div class="navbar-button">
-            <button class="navbutton" aria-controls="navbar" aria-expanded="false">
-                <svg fill="white" class="navlogo" viewbox="0 0 100 100" width="25">
-                    <rect class="line top-line" width="80" height="10" x="10" y="35" rx="5"></rect>
-                    <rect class="line bottom-line" width="80" height="10" x="10" y="55" rx="5"></rect>
-                </svg>
-            </button>
-        </div>
-    </nav>
-    <br>
     <!--Page content goes here-->
     <main>
-        <!--Dispaly past projects-->
-        <div class="projects">
-            <h1>Projects</h1>
-            <div>
-                <section>
-                    <img src="./images/TAZEdaily.png">
-                    <br>
-                    <a href="https://www.github.com/zprongua/tazedaily" target="_blank">TAZE Daily</a>
-                </section>
-                <section>
-                    <img src="./images/IHateRunning.png">
-                    <br>
-                    <a href="https://www.github.com/zprongua/ihaterunning" target="_blank">I Hate Running</a>
-                </section>
-                <section>
-                    <img src="./images/CookeBook.png">
-                    <br>
-                    <a href="https://www.github.com/zprongua/cookebook" target="_blank">Cook-e-Book</a>
-                </section>
-            </div>
-        </div>
+        <p>Hey there! Welcome to my page. Check out some of my work, contact me, or check out my resume. </p>
     </main>
     <br>
     <!--Footer with me, the authour, a link to my Github/LinkedIn, and an email link-->

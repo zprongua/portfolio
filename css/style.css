@@ -113,21 +113,31 @@ main {
     align-content: center;
 }
 
+/* Projects Page */
+.projects-grid {
+    display: grid;
+    padding: 5%;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 section {
-    margin: auto;
-    margin-top: 2em;
-    padding: 2em;
-    width: 80%;
+    padding: 1em;
+    width: auto;
     background: #333;
     box-shadow: 5px 5px 5px orange;
     border-radius: 5px;
-
 }
 
 section img {
     width: 100%;
     margin: auto;
+    aspect-ratio: 1.4;
     border-radius: 5px;
+}
+
+section:hover {
+    width: 600px;
 }
 
 /* Resume Page */
@@ -277,5 +287,9 @@ iframe {
 
     section {
         padding: 10px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
