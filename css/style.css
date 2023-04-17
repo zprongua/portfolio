@@ -20,7 +20,6 @@ html {
     font-family: Calibri, Arial, sans-serif;
     background: #4e89db;
     color-scheme: dark light;
-    /* color: #c4cad1; #006bb6*/
     color: #fff;
 }
 
@@ -29,8 +28,12 @@ html {
 #profile {
     max-width: 100%;
     max-height: 125px;
-    border-radius: 50%;
+    border-radius: 40%;
     display: block;
+}
+
+figure {
+    text-align: center;
 }
 
 /* accessibility formatting */
@@ -50,12 +53,6 @@ header {
     align-items: center;
 }
 
-header img {
-    max-height: 125px;
-    max-width: 100%;
-    display: block;
-}
-
 .header-name {
     font-size: 4em;
     font-weight: 500;
@@ -64,9 +61,7 @@ header img {
 }
 
 .header-title {
-    font-size: 1.4em;
     font-weight: 100;
-    padding-left: 20px;
     color: orange;
 }
 
@@ -113,8 +108,26 @@ footer {
 }
 
 /* Index Page */
-.projects {
+main {
     text-align: center;
+    align-content: center;
+}
+
+section {
+    margin: auto;
+    margin-top: 2em;
+    padding: 2em;
+    width: 80%;
+    background: #333;
+    box-shadow: 5px 5px 5px orange;
+    border-radius: 5px;
+
+}
+
+section img {
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
 }
 
 /* Resume Page */
@@ -260,5 +273,9 @@ iframe {
     iframe {
         width: auto;
         height: 250px;
+    }
+
+    section {
+        padding: 10px;
     }
 }
