@@ -142,19 +142,24 @@ section:hover {
 
 /* Resume Page */
 #summary {
-    text-indent: 20px;
-    padding: 30px 7%;
+    padding: 15px 7%;
     font-size: 17px;
+    text-align: justify;
 }
 
-#skills {
+.skills {
     text-align: center;
-    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#skills img {
+.skills img {
     width: 45px;
-    padding-right: 20px;
+}
+
+.skills tr,
+th {
+    padding: 10px;
 }
 
 .work-title {
@@ -171,17 +176,22 @@ section:hover {
     white-space: nowrap;
 }
 
+#work {
+    text-align: justify;
+}
+
 #work dl {
     margin-left: 30px;
+    margin-right: 10px;
 }
 
 #work dt {
     padding: 10px;
 }
 
-#work dd {
+/* #work dd {
     padding: 2px;
-}
+} */
 
 .work-card {
     background-color: #4e89db;
@@ -305,5 +315,14 @@ iframe {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skills-imgs,
+    .skills-th {
+        display: none;
+    }
+
+    .skills th {
+        display: flex;
     }
 }
