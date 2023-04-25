@@ -213,6 +213,15 @@ th {
     color: orange;
 }
 
+#message {
+    resize: none;
+    margin: 5px;
+}
+
+.contact-form label {
+    text-align: start;
+}
+
 #map {
     text-align: center;
 }
